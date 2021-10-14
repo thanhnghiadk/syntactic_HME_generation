@@ -1,0 +1,985 @@
+#Non-terminals
+0	Letter
+1	Digit
+2	Digit_1
+3	1_Sup_1
+4	Int
+5	Bin_Op
+6	Un_Op
+7	Rel_Op
+8	Mem_Op
+9	LPExp0
+10	RPExp0
+11	LP
+12	RP
+13	LBraceExp0
+14	LBrace
+15	RBrace
+16	LBracketExp0
+17	LBracket
+18	RBracket
+19	Lmid
+20	Rmid
+21	LmidExp0
+22	Sqrt
+23	nRoot
+24	RootOfTerm
+25	Frac
+26	Frac2
+27	Num
+28	Float_Lead
+29	Float
+30	Let_Num
+31	Frac1
+32	FracExp
+33	ParExp
+34	ParExp1
+35	InsExp
+36	OverExp
+37	OverExp1
+38	OverExp2
+39	Expr
+40	Expr1
+41	Expr2
+42	Expr3
+43	Expr4
+44	Equal
+45	Mid
+46	Minus
+47	Plus
+48	Div
+49	OverDiv
+50	OverDiv2
+51	OverDiv1
+52	LessThan
+53	GreaterThan
+54	LoopList
+55	LoopFactor
+56	NumLoop
+57	Factor
+58	NumVar
+59	Term
+60	Terminal
+61	TermLeft
+62	TermRight
+63	MixFracExp
+64	UnaryExp
+65	FracVar
+66	Letter_X1
+67	Letter_X2
+68	SupExp
+69	SubExp
+70	Dot
+71	Dots
+72	Dots1
+73	Comma
+74	Dots_Comma
+75	Cdot
+76	Slash
+77	Colon_Exp0
+78	Colon_Exp1
+79	Colon_Exp2
+80	Colon
+81	Dots_Eq
+82	OverDots_Eq
+83	OverDots_Eq1
+84	OverDots_Eq2
+85	Factorial
+86	FactorialExp
+87	Prime
+88	LowLetterPrime
+89	LowLetterPrime2
+90	Vbar
+91	IntExp
+92	IntExp1
+93	Integral
+94	IntPart1
+95	IntPart2
+96	IntPart3
+97	IntPart4
+98	Sum
+99	SumExp
+100	Series
+101	Series1
+102	Series2
+103	SubOfSum
+104	SubOfSum1
+105	Supset
+106	Infty
+107	LimExp
+108	LimWord
+109	OverLim
+110	LimArrow
+111	LeftRightArrow
+112	ArrowExp
+113	ArrowPart1
+114	Letter_A
+115	Letter_C
+116	Letter_D
+117	Letter_G
+118	Letter_i
+119	Letter_L
+120	Letter_L_cap
+121	Letter_M
+122	Letter_N
+123	Letter_O
+124	Letter_R
+125	Letter_S
+126	Letter_T
+127	MO
+128	LI
+129	LO
+130	OG
+131	CO
+132	SI
+133	TA
+134	AN
+135	TAN
+136	AR
+137	ARC
+138	ARG
+139	1L
+140	1O
+141	FuncLog
+142	FuncLog1
+143	FuncExp
+144	Function
+145	FuncTrigo
+146	ExpList1
+147	ExpList
+148	ExpListR
+149	F_Def_Exp
+150	F_Def_Exp1
+151	CapLetter
+152	Condition
+153	CondExp
+154	SetExp
+155	SetExp1Left
+156	SetExp1Right
+157	SetExp2Left
+158	SetExp2Right
+159	SetExpL
+160	SetExpR
+161	SetExpFull
+162	SetOp
+163	QuanOne
+164	QuanSym
+165	Range
+166	Range1
+167	QuanOp
+168	QuanList
+169	Circ
+170	Circ_Exp
+171	Angle
+172	Tri
+173	Bi
+174	Ang
+175	Angle_Factor
+176	Ang_Expr2
+177	Arc_Sym
+178	Arc
+179	Ang_Op
+180	Ang_Expr1
+181	Tri_Op
+182	Tri_Sym
+183	Tri_Expr
+184	Triangle
+185	Prime2
+186	Line
+187	Line_Expr1
+188	Line_Expr2
+189	Line_Op
+190	LowerLetter
+191	Arrow
+192	ArrowTerm
+193	ArrowTerm1
+194	Rightarrow
+195	Leftarrow
+196	Vector
+197	Set
+198	Element
+199	SetPar1
+200	SetPar2
+201	LBraceSetExp0
+202	Set1
+203	Set2
+204	VarNothing
+205	SetPar
+206	One
+207	ElementOp1
+208	ElementOp2
+209	SetExp2
+210	Ang_ExprPar
+211	Ang_ExprPar1
+212	VbarExp1
+213	Mem_in
+214	Mem_ni
+215	MemNI
+216	Mem_notni
+217	LineLeft
+218	SupExpMean
+219	Mean
+220	TerminalMean
+221	TermMeanLeft
+222	TermMeanRight
+223	FracExpMean
+224	ParExpRBMean
+225	ParExpLBMean
+226	CombP1_1
+227	CombP2_1
+228	Letter_Perm
+229	PermP1_1
+230	PermP2_1
+231	Letter_Comb
+232	CombP1_2
+233	CombP2_2
+234	PermP1_2
+235	PermP2_2
+236	CombH_P1_1
+237	CombH_P1_2
+238	CombH_P2_1
+239	CombH_P2_2
+240	Letter_CombH
+241 Lim&RExp
+242 ArrowPart2
+243 SubOfSum1
+244 SubOfSum
+245 SumSub
+246 SumSup
+247 SumHor
+248 SumSubSup
+249 SumHorSup
+250 SumHorSub
+251 SumSupU
+252 SumSubU
+253 SumHorU
+254 SumHorSubU
+255 SumHorSupU
+256 rightarrow
+257 RBracketExp0
+
+# updated from surala old version
+#241	CapExp
+#242	CapLine
+#243	CapLineSup
+#244	CapTerm
+#245	CapTermLeft
+#246	CapTermRight
+#247	NegInt
+#248	NegFloat
+#249	PosInt
+#250	PosFloat
+#251	NumVec
+#252	NumVecLeft
+#253	NumVecRight
+#254	NumVecExp
+#255	LPNum0
+#256	RPNum0
+#257	NumExp1
+#258	NumExp0
+#259	Root
+#260	FracRoot
+#261	OverIntRoot
+#262	OverIntRoot1
+#263	OverIntRoot2
+#264	PosFrac
+#265	NegFrac
+#266	MixNum
+#267	SqrtRoot
+#268	PosSqrt
+#269	NegSqrt
+#270	RootLeft
+#271	RootRight
+#272	RootTerminal
+
+
+
+#Initial symbol of the grammar
+START
+Expr
+
+
+#Terminal productions
+PTERM
+#S		->		[t1, t2, ... tn]
+Letter			letters.term
+Digit			digits.term
+Digit_1			digit_1.term
+Bin_Op			bin_op.term
+Un_Op			un_op.term
+Rel_Op			rel_op.term
+Mem_Op			mem_op.term
+MemNI			memni.term
+Dot				dot.term
+LP				lp.term
+RP				rp.term
+Sqrt			sqrt.term
+Frac			frac.term
+Equal			equal.term
+Mid				mid.term
+Minus			minus.term
+Plus			plus.term
+Supset			supset.term
+Letter_X1		letter_x1.term
+Letter_X2		letter_x2.term
+Div				div.term
+LessThan		less_than.term
+GreaterThan		greater_than.term
+Dots			dots.term
+LBrace			lbrace.term
+RBrace			rbrace.term
+LBracket		lbracket.term
+RBracket		rbracket.term
+Lmid			lmid.term
+Rmid			rmid.term
+Factorial		factorial.term
+Prime			prime.term
+Vbar			vbar.term
+Integral		integral.term
+Sum				bigop.term
+Infty			infty.term
+LimWord			lim.term
+LimArrow		limarrow.term
+LeftRightArrow	lrarrow.term
+Letter_L		letter_l.term
+Letter_L_cap	letter_l_cap.term
+Letter_O		letter_o.term
+Letter_G		letter_g.term
+Letter_i		letter_i.term
+Letter_M		letter_m.term
+Letter_S		letter_s.term
+Letter_C		letter_c.term
+Letter_A		letter_a.term
+Letter_T		letter_t.term
+Letter_N		letter_n.term
+Letter_R		letter_r.term
+Letter_D		letter_d.term
+Letter_Perm		letter_perm.term
+Letter_Comb		letter_comb.term
+Letter_CombH	letter_combH.term
+FuncLog			funclog.term
+FuncTrigo		functrigo.term
+Comma			comma.term
+CapLetter		capletters.term
+SetOp			setop.term
+QuanSym			quansym.term
+QuanOp			quanop.term
+Circ			circ.term
+Ang				angle.term
+Arc_Sym			arc.term
+Ang_Op			angle_op.term
+Tri_Op			triangle_op.term
+Tri_Sym			triangle.term
+Line_Op			line_op.term
+LowerLetter		lowerletters.term
+Slash			slash.term
+Colon			colon.term
+Arrow			arrow.term
+VarNothing		varnothing.term
+One				one.term
+ElementOp1		elementop1.term
+ElementOp2		elementop2.term
+
+#Unary and Binary productions
+PBIN
+#pr	t	S	->			A				B				TeX-out					[Stroke	Order]
+1.0	H	LeftRightArrow	LessThan		Rightarrow		"\Leftrightarrow"
+1.0	Hs	LeftRightArrow	Rightarrow		LessThan		"\Leftrightarrow"
+1.0	H	LeftRightArrow	Leftarrow		GreaterThan		"\Leftrightarrow"
+1.0	Hs	LeftRightArrow	GreaterThan		Leftarrow		"\Leftrightarrow"
+1.0	U	Arrow			LeftRightArrow					"$1"
+1.0	H	Rightarrow		Equal			GreaterThan		"\Rightarrow"
+1.0	Hs	Rightarrow		GreaterThan		Equal			"\Rightarrow"
+1.0	H	rightarrow		Minus			GreaterThan		"\rightarrow"
+1.0	U	LimArrow		rightarrow						"$1"
+1.0	H	Leftarrow		LessThan		Equal			"\Leftarrow"
+1.0	Hs	Leftarrow		Equal			LessThan		"\Leftarrow"
+1.0	V	Div				Dot				OverDiv			"\div"					"AAA"
+1.0	V	OverDiv			Minus			Dot				""						"AAA"
+1.0	Vs	Div				OverDiv			Dot				"\div"					"AAA"
+1.0	V	Div				OverDiv1		Dot				"\div"					"AAA"
+1.0	Vs	OverDiv1		Minus			Dot				""						"AAA"
+1.0	Vs	Div				OverDiv2		Dot				"\div"					"AAA"
+1.0	V	Dots_Eq			Dot				OverDots_Eq		"\fallingdotseq"		"AAA"
+1.0	V	OverDots_Eq		Equal			Dot				""						"AAA"
+1.0	Vs	Dots_Eq			OverDots_Eq		Dot				"\fallingdotseq"		"AAA"
+1.0	V	Dots_Eq			OverDots_Eq1	Dot				"\fallingdotseq"		"AAA"
+1.0	Vs	OverDots_Eq1	Equal			Dot				""						"AAA"
+1.0	Vs	Dots_Eq			OverDots_Eq2	Dot				"\fallingdotseq"		"AAA"
+1.0	Vs	OverDots_Eq2	Dot	Equal						""						"AAA"
+1.0	Vs	OverDiv2		Dot	Minus						""						"AAA"
+1.0	V	Bin_Op			Plus			Minus			"\pm"					"AAA"
+1.0	Vs	Bin_Op			Minus			Plus			"\pm"					"AAA"
+1.0	V	Bin_Op			Minus			Plus			"\mp"					"AAA"
+1.0	Vs	Bin_Op			Plus			Minus			"\mp"					"AAA"
+1.0	V	Un_Op			Plus			Minus			"\pm"					"AAA"
+1.0	Vs	Un_Op			Minus			Plus			"\pm"					"AAA"
+1.0	V	Un_Op			Minus			Plus			"\mp"					"AAA"
+1.0	Vs	Un_Op			Plus			Minus			"\mp"					"AAA"
+1.0	Vs	Bin_Op			Arrow			Letter			"\overset { $2 } { $1 }"	"AAA"
+1.0	V	Bin_Op			Letter			Arrow			"\overset { $1 } { $2 }"	"AAA"
+1.0	U	Bin_Op			Arrow							"$1"
+1.0	U	Bin_Op			Div								"\div"
+1.0	H	MO				Letter_M		Letter_O		""
+1.0	H	Bin_Op			MO				Letter_D		"\mod"
+1.0	V	Equal			Minus			Minus			"="						"AAA"
+1.0	Vs	Equal			Minus			Minus			"="						"AAA"
+1.0	V	Tri_Op			Minus			Equal			"\equiv"				"AAA"
+1.0	Vs	Tri_Op			Equal			Minus			"\equiv"				"AAA"
+1.0	V	Equal			Minus			Minus			"="						"AAA"
+1.0	Vs	Equal			Minus			Minus			"="						"AAA"
+1.0	U	Tri_Op			Equal							"$1"
+1.0	V	SetOp			Letter_C		Minus			"\subseteq"				"AAA"
+1.0	V	SetOp			Supset			Minus			"\supseteq"				"AAA"
+1.0	H	Line_Op			Slash			Slash			"\parallel"
+1.0	H	Line_Op			Vbar			Vbar			"\parallel"
+1.0	H	LineLeft		LowerLetter		Line_Op			"$1 $2"
+1.0	H	Term			LineLeft		LowerLetter		"$1 $2"
+1.0	V	Colon			Dot				Dot				":"						"AAA"
+1.0	Vs	Colon			Dot				Dot				":"						"AAA"
+1.0	H	Dots1			Dot				Dot				""
+1.0	Sup	Dots1			Dot				Dot				""						"AAA"
+1.0	Sub	Dots1			Dot				Dot				""						"AAA"
+1.0	H	Dots			Dots1			Dot				"\ldots"
+1.0	Sup	Dots			Dots1			Dot				"\ldots"				"AAA"
+1.0	Sub	Dots			Dots1			Dot				"\ldots"				"AAA"
+1.0	H	Dots			Dots			Dot				"\ldots"
+1.0	Sup	Dots			Dots			Dot				"\ldots"				"AAA"
+1.0	Sub	Dots			Dots			Dot				"\ldots"				"AAA"
+1.0	U	Rel_Op			Dots_Eq							"$1"
+1.0	U	Rel_Op			Equal							"$1"
+1.0	H	Letter			Integral		Minus			"f"						
+1.0	H	1L				Digit_1			Letter_L_cap	""
+1.0	V	Letter			Minus			1L				"\pi"					"AAA"
+1.0	Vs	Letter			1L				Minus			"\pi"					"AAA"
+1.0	Sub	Float_Lead		Int				Dot				"$1 $2"					"AAA"
+1.0	H	Float			Float_Lead		Int				"$1 $2"
+1.0	H	Int				Digit			Int				"$1 $2"
+1.0	U	Int				Digit							"$1"
+1.0	U	Num				Int								"$1"
+1.0	U	Num				Float							"$1"
+1.0	U	Num				Infty							"$1"
+1.0	H	Num				Un_Op			Infty			"$1 $2"
+1.0	H	Num				Plus			Infty			"$1 $2"
+1.0	U	Let_Num			Num								"$1"
+1.0	U	Let_Num			Letter							"$1"
+
+#===================================Fraction===========================================
+1.0	V	FracExp			Term			OverExp			"\frac { $1 } { $2 }"		"BAA"
+1.0	V	OverExp			Frac			Term			"$2"						"BAB"
+1.0	Vs	FracExp			OverExp			Term			"\frac { $2 } { $1 }"		"BAA"
+1.0	V	FracExp			OverExp1		Term			"\frac { $1 } { $2 }"		"BAA"
+1.0	Vs	OverExp1		Frac			Term			"$2"						"BAB"
+1.0	Vs	FracExp			OverExp2		Term			"\frac { $2 } { $1 }"		"BAA"
+
+# (Exp ^ FracExp) ^ FracExp    (Ex: (a power (4/3)) power 1/2)
+1.0	U	Term			FracExp							"$1"
+
+1.0	Vs	OverExp2		Term			Frac			"$1"						"BAB"
+#======================================================================================
+
+
+1.0	H	ParExp			LmidExp0		Rmid			"$1 $2"
+1.0	H	LmidExp0		Lmid			Term			"$1 $2"
+1.0	Hs	LmidExp0		Term			Lmid			"$2 $1"
+1.0	H	LmidExp0		Lmid			ExpList			"$1 $2"
+1.0	Hs	LmidExp0		ExpList			Lmid			"$2 $1"
+1.0	H	ParExp			LPExp0			RP				"$1 $2"
+1.0	Hs	ParExp			RPExp0			LP				"$2 $1"
+1.0	H	LPExp0			LP				Term			"$1 $2"
+1.0	Hs	LPExp0			Term			LP				"$2 $1"
+1.0	H	RPExp0			Term			RP				"$1 $2"
+1.0	Hs	RPExp0			RP				Term			"$2 $1"
+1.0	H	LPExp0			LP				ExpList			"$1 $2"
+1.0	Hs	LPExp0			ExpList			LP				"$2 $1"
+1.0	H	RPExp0			ExpList			RP				"$1 $2"
+1.0	Hs	RPExp0			RP				ExpList			"$2 $1"
+1.0	H	ParExp			LBraceExp0		RBrace			"$1 $2"
+1.0	H	LBraceExp0		LBrace			Term			"$1 $2"
+1.0	Hs	LBraceExp0		Term			LBrace			"$2 $1"
+1.0	H	LBraceExp0		LBrace			ExpList			"$1 $2"
+1.0	Hs	LBraceExp0		ExpList			LBrace			"$2 $1"
+1.0	H	Set				LBraceSetExp0	RBrace			"$1 $2"
+1.0	H	LBraceSetExp0	LBrace			SetExp			"$1 $2"
+1.0	Hs	LBraceSetExp0	SetExp			LBrace			"$2 $1"
+1.0	H	LBraceSetExp0	LBrace			SetExpFull		"$1 $2"
+1.0	Hs	LBraceSetExp0	SetExpFull		LBrace			"$2 $1"
+1.0	H	LBraceSetExp0	LBrace			CondExp			"$1 $2"
+1.0	Hs	LBraceSetExp0	CondExp			LBrace			"$2 $1"
+1.0	H	ParExp			LBracketExp0	RBracket		"$1 $2"
+1.0	H	ParExp			LBracket		RBracketExp0	"$1 $2"
+1.0	Hs	ParExp			RBracketExp0	LBracket		"$2 $1"
+1.0	H	LBracketExp0	LBracket		Term			"$1 $2"
+1.0	H	RBracketExp0	Term			RBracket		"$1 $2"
+1.0	Hs	LBracketExp0	Term			LBracket		"$2 $1"
+1.0	H	LBracketExp0	LBracket		ExpList			"$1 $2"
+1.0	Hs	LBracketExp0	ExpList			LBracket		"$2 $1"
+1.0	H	MixFracExp		Int				FracExp			"$1 $2"					"BAA"
+1.0	H	FactorialExp	Let_Num			Factorial		"$1 $2"
+1.0	H	FactorialExp	ParExp			Factorial		"$1 $2"
+1.0	Sup	SupExp			Let_Num			Term			"{ $1 } ^ { $2 }"		"AAA"
+1.0	H	Expr			Let_Num			Term			"$1 $2"				"AAA"
+1.0	Sup	SupExp			ParExp			Term			"{ $1 } ^ { $2 }"		"AAA"
+1.0	Sup	SupExp			SubExp			Term			"{ $1 } ^ { $2 }"		"AAA"
+1.0	Sup	SupExp			Expr			Term			"{ $1 } ^ { $2 }"		"AAA"
+1.0	Sup	SupExpMean		LowerLetter		Let_Num			"{ $1 } ^ { $2 }"		"AAA"
+1.0	Sub	SubExp			SupExp			Term			"{ $1 } _ { $2 }"		"AAA"
+1.0	Sub	SubExp			SubExp			Term			"{ $1 } _ { $2 }"		"AAA"
+1.0	Sub	SubExp			Letter			Term			"{ $1 } _ { $2 }"		"AAA"
+1.0	Sub	SubExp			ParExp			Term			"{ $1 } _ { $2 }"		"AAA"
+1.0	Sup	LoopFactor		Letter			Prime			"{ $1 } ^ { $2 }"					"AAA"
+1.0	Sub	SubExp			Let_Num			Term			"{ $1 } _ { $2 }"		"AAA"
+1.0	H	VbarExp1		Vbar			Term			"$1 $2"
+1.0	H	ParExp			LowerLetter		VbarExp1		"$1 $2"
+1.0	V	Vector			LimArrow		Letter			"\overrightarrow { $2 }"			"AAA"
+1.0	Vs	Vector			Letter			LimArrow		"\overrightarrow { $1 }"			"AAA"
+1.0	V	Vector			LimArrow		Bi				"\overrightarrow { $2 }"			"AAA"
+1.0	Vs	Vector			Bi				LimArrow		"\overrightarrow { $1 }"			"AAA"
+1.0	H	NumLoop			Num				LoopList		"$1 $2"
+1.0	H	NumLoop			LoopList		Num				"$1 $2"
+1.0	H	UnaryExp		Un_Op			Term			"$1 $2"
+1.0	H	Expr			Expr			TermRight		"$1 $2"
+1.0	Sub	IntPart1		Integral		Term			"$1 _ { $2 }"			"BBB"
+1.0	V	IntPart1		Integral		Term			"$1 _ { $2 }"			"BBB"
+1.0	Sup	IntPart2		IntPart1		Term			"$1 ^ { $2 }"			"BBA"
+1.0	Vs	IntPart2		IntPart1		Term			"$1 ^ { $2 }"			"BBA"
+1.0	Sup	IntPart3		Integral		Term			"$1 ^ { $2 }"			"BBA"
+1.0	Vs	IntPart3		Integral		Term			"$1 ^ { $2 }"			"BBA"
+1.0	Sub	IntPart4		IntPart3		Term			"$1 _ { $2 }"			"BBB"
+1.0	V	IntPart4		IntPart3		Term			"$1 _ { $2 }"			"BBB"
+1.0	H	IntExp1			IntPart2		Term			"$1 $2"
+1.0	H	IntExp1			IntPart4		Term			"$1 $2"
+1.0	H	IntExp1			Integral		Term			"$1 $2"
+1.0	U	IntExp			IntExp1							"$1"
+
+#================================== Sum function ================================
+
+#Sub
+1.0	H	SubOfSum1		Letter			Bin_Op			"$1 $2"
+1.0	H	SubOfSum1		Int				Bin_Op			"$1 $2"
+#1.0	H	SubOfSum1		Letter			Equal			"$1 $2"
+#1.0	H	SubOfSum1		Int				Equal			"$1 $2"
+1.0	H	SubOfSum		SubOfSum1		Int				"$1 $2"
+#1.0	U	SubOfSum			Term							"$1"
+
+#Order: sum->sub->sup->hor
+#sum->sub
+1.0	V	SumSub			Sum				SubOfSum		"$1 _ { $2 }"			"BBB"
+#->sup
+1.0	Vs	SumSubSup		SumSub			Letter			"$1 ^ { $2 }"			"BBA"
+
+#Order: sum->sup->sub->hor
+#sum->sup
+1.0	Vs	SumSup			Sum				Letter			"$1 ^ { $2 }"			"BBB"
+#->sub
+1.0	V	SumSubSup		SumSup			SubOfSum		"$1 _ { $2 }"			"BBB"
+#->hor
+1.0	H	SumExp			SumSubSup		Term			"$1 $2"
+
+#Order: sum->sup->hor->sub
+#sum->sup
+1.0	Vs	SumSupU			Sum				Letter			"^ { $2 }"				"BBB"
+#->hor
+1.0	H	SumHorSupU		SumSupU			Term			"$1 $2"					"BBB"
+1.0	H	SumHorSup		SumSupU			Term			"\sum $1 $2"			"BBB"
+#->sub: same as below
+
+#Order: sum->sub->hor->sup
+#sum->sub
+1.0	Vs	SumSubU			Sum				SubOfSum		"_ { $2 }"				"BBB"
+#->hor
+1.0	H	SumHorSubU		SumSubU			Term			"$1 $2"					"BBB"
+1.0	H	SumHorSub		SumSubU			Term			"\sum $1 $2"			"BBB"
+#->sup: same as below
+
+#Order: sum->hor->sup->sub (U: uncompleted)
+#->hor
+1.0	H	SumHorU			Sum				Term			"$2"
+#->sup
+1.0	Vs	SumHorSup		SumHorU			Letter			"\sum ^ { $2 } $1"		"BBB"
+1.0	Vs	SumHorSupU		SumHorU			Letter			"^ { $2 } $1"			"BBB"
+#->sub
+1.0	V	SumExp			SumHorSupU		SubOfSum		"\sum _ { $2 } $1"		"BBB"
+
+#Order: sum->hor->sub->sup (U: uncompleted)
+#->sub
+1.0	V	SumHorSubU		SumHorU			SubOfSum		"_ { $2 } $1"			"BBB"
+1.0	V	SumHorSub		SumHorU			SubOfSum		"\sum _ { $2 } $1"		"BBB"
+#->sup
+1.0	V	SumExp			SumHorSubU		Letter			"\sum ^ { $2 } $1"		"BBB"
+
+
+#Order: sum->sub->hor
+1.0	H	SumExp			SumSub			Term			"$1 $2"
+
+#Order: sum->hor
+1.0	H	SumExp			Sum				Term			"$1 $2"
+#================================================================================
+
+#================================== lim function ================================
+1.0	H	LimExp			LimWord			Term			"$1 $2 "
+1.0	H	LimExp			OverLim			Term			"$1 $2"
+1.0	V	OverLim			LimWord			ArrowExp		"$1 _ { $2 }"			"AAA"
+1.0	V	OverLim			LimWord			Let_Num			"$1 _ { $2 }"			"AAA"
+1.0	H	Lim&RExp		LimWord			Term			"$2"
+1.0	V	LimExp			Lim&RExp		ArrowExp		"\lim _ { $2 } $1"			"AAA"
+
+1.0	H	ArrowPart1		LimArrow		Term			"$1 $2"
+1.0	H	ArrowPart1		LimArrow		Int				"$1 $2"
+1.0	H	ArrowPart1		LimArrow		Infty			"$1 $2"
+1.0	H	ArrowExp		Letter			ArrowPart1		"$1 $2"
+
+1.0	H	ArrowPart2		Letter			LimArrow		"$1 $2"
+1.0	H	ArrowExp		ArrowPart2		Term			"$1 $2"
+1.0	H	ArrowExp		ArrowPart2		Int				"$1 $2"
+1.0	H	ArrowExp		ArrowPart2		Infty			"$1 $2"
+#================================================================================
+
+#================================== log function ================================
+1.0	H	1O				Digit_1			Letter_O		""
+1.0	H	FuncLog			1O				Letter_G		"\log"
+1.0	H	LO				Letter_L		Letter_O		""
+1.0	Sub	LO				Letter_L		Letter_O		""						"AAA"
+1.0	Sup	LO				Letter_L		Letter_O		""						"AAA"
+1.0	H	FuncLog			LO				Letter_G		"\log"
+1.0	Sub	FuncLog			LO				Letter_G		"\log"					"AAA"
+1.0	Sup	FuncLog			LO				Letter_G		"\log"					"AAA"
+1.0	H	OG				Letter_O		Letter_G		""
+1.0	Sub	OG				Letter_O		Letter_G		""						"AAA"
+1.0	Sup	OG				Letter_O		Letter_G		""						"AAA"
+1.0	H	FuncLog			Letter_L		OG				"\log"
+1.0	Sub	FuncLog			Letter_L		OG				"\log"					"AAA"
+1.0	Sup	FuncLog			Letter_L		OG				"\log"					"AAA"
+1.0	Sub	Function		FuncLog			Term			"$1 _ { $2 }"			"AAA"
+1.0	Sub	Function		FuncLog			Letter			"$1 _ { $2 }"			"AAA"
+1.0	U	Function		FuncLog							"$1"
+#================================================================================"
+
+1.0	H	FuncExp			Function		ParExp			"$1 $2"
+1.0	H	FuncExp			Function		Term			"$1 $2"
+1.0	H	FuncExp			Function		FracExp			"$1 $2"
+1.0	H	FuncExp			Function		Ang_Expr2		"$1 $2"
+1.0	H	FuncExp			Function		Ang_ExprPar		"$1 $2"
+1.0	H	FuncExp			Function		Letter			"$1 $2"
+
+# Num FuncExp
+1.0	U	LoopFactor		FuncExp							"$1"
+1.0	U	LoopFactor		SumExp							"$1"
+
+1.0	H	LoopList		LoopList		FuncExp			"$1 $2"
+1.0	Sup	Function		FuncTrigo		Let_Num			"$1 ^ { $2 }"			"AAA"
+1.0	V	Mean			Minus			Letter			"\overline { $2 }"		"AAA"
+1.0	Vs	Mean			Letter			Minus			"\overline { $1 }"		"AAA"
+1.0	V	Mean			Minus			SupExpMean		"\overline { $2 }"		"AAA"
+1.0	Vs	Mean			SupExpMean		Minus			"\overline { $1 }"		"AAA"
+#1.0	V	Mean			Minus			Terminal		"\overline { $2 }"		"AAA"
+#1.0	Vs	Mean			Terminal		Minus			"\overline { $1 }"		"AAA"
+
+1.0	U	LoopFactor		Mean							"$1"
+1.0	U	LoopFactor		InsExp							"$1"
+1.0	U	LoopFactor		Letter							"$1"
+1.0	U	LoopFactor		SupExp							"$1"
+1.0	U	LoopFactor		SubExp							"$1"
+1.0	U	Term			SubExp							"$1"
+1.0	U	LoopFactor		FracExp							"$1"
+1.0	U	LoopFactor		ParExp							"$1"
+1.0	U	LoopFactor		FactorialExp					"$1"
+1.0	U	LoopFactor		Vector							"$1"
+1.0	U	LoopList		LoopFactor						"$1"
+1.0	H	LoopList		LoopFactor		LoopList		"$1 $2"
+1.0	U	Factor			LoopList						"$1"
+1.0	U	Factor			Num								"$1"
+1.0	U	Factor			Dots							"$1"
+1.0	U	Factor			NumLoop							"$1"
+1.0	U	Factor			MixFracExp						"$1"
+1.0	U	Factor			IntExp							"$1"
+1.0	U	Factor			SumExp							"$1"
+1.0	U	Factor			LimExp							"$1"
+1.0	U	Factor			FuncExp							"$1"
+
+#1.0	U	Factor			CombP2_1						"$1"
+#1.0	U	Factor			PermP2_1						"$1"
+1.0	U	Factor			CombP2_2						"$1"
+1.0	U	Factor			PermP2_2						"$1"
+1.0	U	Factor			CombH_P2_2						"$1"
+#1.0	U	Term			CombP2_1						"$1"
+#1.0	U	Term			PermP2_1						"$1"
+1.0	U	Term			CombP2_2						"$1"
+1.0	U	Term			PermP2_2						"$1"
+1.0	U	Term			CombH_P2_2						"$1"
+
+1.0	H	Factor			Minus			Factor			"$1 $2"
+1.0	H	Factor			Plus			Factor			"$1 $2"
+1.0	H	TermLeft		Factor			Bin_Op			"$1 $2"
+1.0	H	Terminal		TermLeft		Terminal		"$1 $2"
+1.0	H	TermRight		Bin_Op			Factor			"$1 $2"
+1.0	H	Terminal		Terminal		TermRight		"$1 $2"
+
+1.0	H	TermMeanLeft	Letter			Bin_Op			"$1 $2"
+1.0	H	TerminalMean	TermMeanLeft	TerminalMean	"$1 $2"
+1.0	H	TermMeanRight	Bin_Op			Letter			"$1 $2"
+1.0	H	TerminalMean	TerminalMean	TermMeanRight	"$1 $2"
+1.0	H	TerminalMean	Letter			Letter			"$1 $2"
+1.0	V	FracExpMean		TerminalMean	TerminalMean	"\frac { $1 } { $2 }"		"BAA"
+
+1.0	H	ParExpRBMean	FracExpMean		RP				"$1 $2"
+1.0	H	TerminalMean	LP				ParExpRBMean	"$1 $2"
+
+1.0	H	ParExpLBMean	LP				FracExpMean		"$1 $2"
+1.0	H	TerminalMean	ParExpLBMean	RP				"$1 $2"
+
+1.0	U	TerminalMean	Letter							"$1"
+
+1.0	U	Terminal		Factor							"$1"
+1.0	U	Terminal		Letter							"$1"
+1.0	U	Term			Terminal						"$1"
+1.0	U	Term			UnaryExp						"$1"
+1.0	H	Expr1			Term			Rel_Op			"$1 $2"
+1.0	H	Expr2			Expr1			Expr1			"$1 $2"
+1.0	H	Expr			Expr1			Term			"$1 $2"
+1.0	H	Expr			Expr2			Term			"$1 $2"
+1.0	H	Expr3			Rel_Op			Term			"$1 $2"
+1.0	H	TermRight		Rel_Op			TermRight		"$1 $2"
+1.0	H	TermRight		Rel_Op			Term			"$1 $2"
+1.0	H	Expr4			Expr3			Expr3			"$1 $2"
+1.0	H	Expr			Term			Expr3			"$1 $2"
+1.0	H	Expr			Term			Expr4			"$1 $2"
+1.0	U	Expr			Term							"$1"
+
+# Expr, Expr
+1.0	U	Term			Expr							"$1"
+
+1.0	H	LI				Letter_L		Letter_i		""
+1.0	Sub	LI				Letter_L		Letter_i		""						"AAA"
+1.0	Sup	LI				Letter_L		Letter_i		""						"AAA"
+1.0	H	LimWord			LI				Letter_M		"\lim"
+1.0	Sub	LimWord			LI				Letter_M		"\lim"					"AAA"
+1.0	Sup	LimWord			LI				Letter_M		"\lim"					"AAA"
+
+1.0	H	CO				Letter_C		Letter_O		""
+1.0	Sub	CO				Letter_C		Letter_O		""						"AAA"
+1.0	Sup	CO				Letter_C		Letter_O		""						"AAA"
+1.0	H	FuncTrigo		CO				Letter_S		"\cos"
+1.0	Sub	FuncTrigo		CO				Letter_S		"\cos"					"AAA"
+1.0	Sup	FuncTrigo		CO				Letter_S		"\cos"					"AAA"
+1.0	Sup	1_Sup_1			Digit_1			Digit_1			"$1 ^ { $2 }"			"AAA"
+1.0	H	SI				Letter_S		1_Sup_1			""
+1.0	H	SI				Letter_S		Letter_i		""
+1.0	Sub	SI				Letter_S		Letter_i		""						"AAA"
+1.0	Sup	SI				Letter_S		Letter_i		""						"AAA"
+1.0	H	FuncTrigo		SI				Letter_N		"\sin"
+1.0	Sub	FuncTrigo		SI				Letter_N		"\sin"					"AAA"
+1.0	Sup	FuncTrigo		SI				Letter_N		"\sin"					"AAA"
+1.0	H	TA				Letter_T		Letter_A		""
+1.0	Sub	TA				Letter_T		Letter_A		""						"AAA"
+1.0	Sup	TA				Letter_T		Letter_A		""						"AAA"
+1.0	H	TAN				TA				Letter_N		"\tan"
+1.0	Sub	TAN				TA				Letter_N		"\tan"					"AAA"
+1.0	Sup	TAN				TA				Letter_N		"\tan"					"AAA"
+1.0	H	AN				Letter_A		Letter_N		""
+1.0	Sub	AN				Letter_A		Letter_N		""						"AAA"
+1.0	Sup	AN				Letter_A		Letter_N		""						"AAA"
+1.0	H	TAN				Letter_T		AN				"\tan"
+1.0	Sub	TAN				Letter_T		AN				"\tan"					"AAA"
+1.0	Sup	TAN				Letter_T		AN				"\tan"					"AAA"
+1.0	U	FuncTrigo		TAN								"$1"
+1.0	H	AR				Letter_A		Letter_R		""
+1.0	H	ARC				AR				Letter_C		""
+1.0	H	ARG				AR				Letter_G		"\arg"
+1.0	Sub	ARG				AR				Letter_G		"\arg"					"AAA"
+1.0	Sup	ARG				AR				Letter_G		"\arg"					"AAA"
+1.0	H	FuncTrigo		ARC				TAN				"\arctan"
+1.0	Sub	FuncTrigo		ARC				TAN				"\arctan"				"AAA"
+1.0	Sup	FuncTrigo		ARC				TAN				"\arctan"				"AAA"
+1.0	U	FuncTrigo		ARG								"$1"
+1.0	U	Function		FuncTrigo						"$1"
+1.0	U	Function		FuncLog1						"$1"
+
+1.0	Sub	ExpList1		Term			Comma			"$1 $2"					"AAA"
+1.0	Sub	ExpList1		TermRight			Comma			"$1 $2"					"AAA"
+1.0	H	ExpList1		ExpList1			TermRight			"$1 $2"					"AAA"
+1.0	H	Term			ExpList1			Term			"$1 $2"					"AAA"
+
+
+# H(H("fraction" , ","), "expression")
+1.0	H	ExpList1		FracExp			Comma			"$1 $2"
+
+1.0	H	ExpList1		ExpList1		ExpList1		"$1 $2"
+1.0	H	ExpList			ExpList1		ExpListR		"$1 $2"
+1.0	H	ExpListR		ExpList1		ExpListR		"$1 $2"
+1.0	H	Dots_Comma		Dots			Comma			"$1 ,"
+1.0	H	ExpListR		Dots_Comma		ExpListR		"$1 $2"
+1.0	U	ExpListR		Dots							"$1"
+1.0	U	ExpListR		Term							"$1"
+1.0	U	Expr			ExpList							"$1"
+
+# Fix x = k + 1, y (1, : expression)
+# 1.0	U	Term			ExpList1						"$1"
+
+#Updated from surala old version (Ex: AB + BC and AB^2)
+#1.0	U	ExpList			CapExp							"$1"
+#1.0	H	CapExp			CapLetter		CapLetter		"$1 $2"
+#1.0	H	CapExp			CapLetter		CapExp			"$1 $2"
+#1.0	H	CapExp			CapExp			CapLetter		"$1 $2"
+#1.0	H	CapLine			CapLetter		CapLetter		"$1 $2"
+#1.0	U	CapTerm			CapLineSup						"$1"
+#1.0	H	CapTermLeft		CapLineSup		Bin_Op			"$1 $2"
+#1.0	H	CapTerm			CapTermLeft		CapTerm			"$1 $2"
+#1.0	H	CapTermRight	Bin_Op			CapLineSup		"$1 $2"
+#1.0	H	CapLineSup		CapLineSup		CapTermRight	"$1 $2"
+#1.0	Sup	CapLineSup		CapLine			Num				"{ $1 }^{ $2 }"			"AAA"
+
+1.0	U	F_Def_Exp		ArrowExp						"$1"
+1.0	H	F_Def_Exp1		Letter			LimArrow		"$1 $2"
+1.0	H	F_Def_Exp		F_Def_Exp1		F_Def_Exp		"$1 $2"
+1.0	U	Expr			F_Def_Exp						"$1"
+1.0	U	Set				CapLetter						"$1"
+1.0	U	Set				VarNothing						"$1"
+#1.0	U	Set				One								"$1"
+1.0	V	Set				Minus			Set				"\overline { $2 }"		"AAA"
+1.0	Vs	Set				Set				Minus			"\overline { $1 }"		"AAA"
+1.0	V	Set				Equal			Set				"\overline { \overline { $2 } }"	"AAA"
+1.0	Vs	Set				Set				Equal			"\overline { \overline { $1 } }"	"AAA"
+1.0	H	SetPar1			LP				Set				"$1 $2"
+1.0	Hs	SetPar1			Set				LP				"$2 $1"
+1.0	H	SetPar			SetPar1			RP				"$1 $2"
+1.0	H	SetPar2			Set				RP				"$1 $2"
+1.0	H	SetPar			LP				SetPar2			"$1 $2"
+1.0	Hs	SetPar			SetPar2			LP				"$2 $1"
+1.0	H	Set1			Set				SetOp			"$1 $2"
+1.0	H	Set2			Set				Mem_Op			"$1 $2"
+1.0	H	Set2			Set1			Set1			"$1 $2"
+1.0	H	Set				Set1			Set				"$1 $2"
+1.0	H	Set				Set2			Set				"$1 $2"
+1.0	U	Set				SetPar							"$1"
+1.0	H	Set				LowerLetter		Set				"$1 $2"
+1.0	U	Element			Letter						"$1"
+1.0	U	Element			Num								"$1"
+
+#1.0	H	Mem_in			Letter_C		Minus			"\in"
+1.0	Ins	Mem_in			Letter_C		Minus			"\in"					"AAA"
+1.0	Ins1	Mem_in		Minus			Letter_C		"\in"					"AAA"
+1.0	U	ElementOp1		Mem_in							"$1"
+1.0	H	Condition		Letter			Mid				"$1 $2"
+1.0	H	SetExp1Left		Element			ElementOp1		"$1 $2"
+1.0	H	SetExp			SetExp1Left		Set				"$1 $2"
+1.0	H	SetExp			SetExp1Left		SetExpR			"$1 $2"
+1.0	H	SetExp1Right	ElementOp1		Element			"$1 $2"
+1.0	H	SetExp1Right	ElementOp1		SetExpR			"$1 $2"
+1.0	H	SetExp			Set				SetExp1Right	"$1 $2"
+1.0	H	SetExp2Left		Set				ElementOp2		"$1 $2"
+1.0	H	SetExp			SetExp2Left		Element			"$1 $2"
+1.0	H	SetExp2Right	ElementOp2		Set				"$1 $2"
+1.0	H	SetExp			Element			SetExp2Right	"$1 $2"
+1.0	Sub	SetExpL			SetExp			Comma			"$1 $2"					"AAA"
+1.0	H	SetExpL			SetExp			Comma			"$1 $2"					"AAA"
+1.0	H	SetExpL			SetExpL			SetExpL			"$1 $2"
+1.0	H	SetExpFull		SetExpL			SetExpR			"$1 $2"
+1.0	U	SetExp			Expr							"$1"
+1.0	U	SetExpFull		SetExp							"$1"
+1.0	H	CondExp			Condition		SetExpFull		"$1 $2"
+1.0	H	SetExpR			SetExpL			SetExpR			"$1 $2"
+1.0	H	Dots_Comma		Dots			Comma			"$1 ,"
+1.0	H	SetExpR			Dots_Comma		SetExpR			"$1 $2"
+1.0	U	SetExpR			Dots							"$1"
+1.0	U	SetExpR			SetExp							"$1"
+1.0	U	Expr			SetExpFull						"$1"
+1.0	U	Expr			Set								"$1"
+1.0	H	QuanOne			QuanSym			Letter			"$1 $2"
+1.0	Sub	QuanOne			QuanSym			Letter			"$1 $2"					"AAA"
+1.0	H	QuanOne			QuanSym			Range			"$1 $2"
+1.0	U	QuanOne			Range							"$1"
+1.0	H	Range1			Letter			QuanOp			"$1 $2"
+1.0	Sub	Range1			Letter			QuanOp			"$1 $2"					"AAA"
+1.0	H	Range			Range1			SetExp			"$1 $2"
+1.0	H	Range			Range1			ParExp			"$1 $2"
+1.0	U	QuanList		QuanOne							"$1"
+1.0	H	QuanList		QuanOne			Comma			"$1 $2"
+1.0	Sub	QuanList		QuanOne			Comma			"$1 $2"					"AAA"
+1.0	U	Expr			QuanList						"$1"
+1.0	H	Expr			QuanList		Expr			"$1 $2"
+1.0	Sup	Circ_Exp		Let_Num			Circ			"{ $1 } ^ { \circ }"			"AAA"
+1.0	U	TermRight		Circ_Exp						"$1"
+1.0	U	Expr			Circ_Exp						"$1"
+1.0	H	Bi				CapLetter		CapLetter		"$1 $2"
+1.0	H	Tri				Bi				CapLetter		"$1 $2"
+1.0	H	Angle			Ang				Tri				"$1 $2"
+1.0	H	Angle			Ang				CapLetter		"$1 $2"
+1.0	Vs	Arc				Bi				Arc_Sym			"overarc( $1 )"			"AAA"
+1.0	U	Angle_Factor	Angle							"$1"
+1.0	H	Angle_Factor	Num				Angle			"$1 $2"
+1.0	H	Angle_Factor	Letter			Angle			"$1 $2"
+1.0	U	Angle_Factor	Arc								"$1"
+1.0	H	Angle_Factor	Num				Arc				"$1 $2"
+1.0	U	Angle_Factor	Circ_Exp						"$1"
+#1.0	U	Angle_Factor	Num								"$1"
+1.0	U	Angle_Factor	Letter							"$1"
+1.0	U	Ang_Expr2		Angle_Factor					"$1"
+1.0	U	Expr			Ang_Expr2						"$1"
+1.0	U	Expr			Ang_ExprPar						"$1"
+1.0	H	Ang_Expr1		Angle_Factor	Bin_Op			"$1 $2"
+1.0	H	Ang_Expr1		Ang_Expr1		Ang_Expr1		"$1 $2"
+1.0	H	Ang_Expr2		Ang_Expr1		Angle_Factor	"$1 $2"
+1.0	H	Ang_ExprPar1	LP				Ang_Expr2		"$1 $2"
+1.0	H	Ang_ExprPar		Ang_ExprPar		RP				"$1 $2"
+1.0	H	Triangle		Tri_Sym			Tri				"$1 $2"
+1.0	U	Triangle		Tri_Sym							"$1"
+1.0	H	Tri_Expr		Triangle		Tri_Op			"$1 $2"
+1.0	H	Expr			Tri_Expr		Triangle		"$1 $2"
+1.0	U	Expr			Triangle						"$1"
+1.0	H	Line_Expr1		Line			Line_Op			"$1 $2"
+1.0	H	Line_Expr2		Line_Expr1		Line_Expr1		"$1 $2"
+1.0	H	Expr			Line_Expr1		Line			"$1 $2"
+1.0	H	Expr			Line_Expr2		Line			"$1 $2"
+1.0	H	Line			CapLetter		CapLetter		"$1 $2"
+1.0	U	Line			LowerLetter						"$1"
+1.0	Sup	LowLetterPrime	LowerLetter		Prime			"$1 ^ { $2 }"					"AAA"
+1.0	U	Line			LowLetterPrime					"$1"
+1.0	U	Letter			LowLetterPrime					"$1"
+1.0	Sup	LowLetterPrime2	LowLetterPrime	Prime			"$1 ^ { $2 }"					"AAA"
+1.0	U	Line			LowLetterPrime2					"$1"
+1.0	U	Letter			LowLetterPrime2					"$1"
+1.0	Sup	Line			LowerLetter		Prime2			"$1 ''"				"AAA"
+1.0	Sup	Prime2			Prime			Prime			"''"					"AAA"
+1.0	Sub	Prime2			Prime			Prime			"''"					"AAA"
+1.0	H	Prime2			Prime			Prime			"''"
+1.0	H	Letter			Letter			Letter			"$1 $2"
+1.0	H	Cdot			Letter			Dot				"$1 $2"
+1.0	H	Cdot			Expr			Dot				"$1 $2"
+1.0	H	Expr			Cdot			Letter			"$1 $2"
+1.0	H	Expr			Cdot			Expr			"$1 $2"
+1.0	H	Colon_Exp2		Let_Num			Colon			"$1 $2"
+1.0	H	Colon_Exp2		InsExp			Colon			"$1 $2"
+1.0	H	Colon_Exp1		Colon_Exp2		Let_Num			"$1 $2"
+1.0	H	Colon_Exp1		Colon_Exp2		InsExp			"$1 $2"
+1.0	H	Colon_Exp0		Colon_Exp1		Equal			"$1 $2"
+1.0	H	Expr			Colon_Exp0		Colon_Exp1		"$1 $2"
+1.0	U	Expr			Colon_Exp1						"$1"
+1.0	nSqrt	nRoot		Let_Num			Sqrt			"\sqrt [ $1 ]"
+1.0	nSqrts	nRoot		Sqrt			Let_Num			"\sqrt [ $2 ]"
+1.0	Ins		InsExp		Sqrt			Term			"\sqrt { $2 }"
+1.0	Ins1	InsExp		Term			Sqrt			"\sqrt { $1 }"
+1.0	Ins		InsExp		nRoot			Term			"$1 { $2 }"
+1.0	Ins1	InsExp		Term			nRoot			"$2 { $1 }"
+1.0	Ins		RootOfTerm	Sqrt			Term			"\sqrt { $2 }"
+1.0	Ins1	RootOfTerm	Term			Sqrt			"\sqrt { $1 }"
+1.0	nSqrt	InsExp		Let_Num			RootOfTerm		"\sqrt [ $1 ]$2(+5)"
+1.0	nSqrts	InsExp		RootOfTerm		Let_Num			"\sqrt [ $2 ]$1(+5)"
+
+1.0	pSub	CombP1_1	Letter_Comb		Term			"_ { $2 } C"				"AAA"
+1.0	pSubs	CombP1_1	Term			Letter_Comb		"_ { $1 } C"				"AAA"
+1.0	Sub		CombP1_2	Letter_Comb		Term			"C _ { $2 }"				"AAA"
+1.0	Sub		CombP2_1	CombP1_1		Term			"$1 _ { $2 }"				"AAA"
+1.0	pSub	CombP2_2	CombP1_2		Term			"_ { $2 } $1"				"AAA"
+
+1.0	pSub	PermP1_1	Letter_Perm		Term			"_ { $2 } P"				"AAA"
+1.0	pSubs	PermP1_1	Term			Letter_Perm		"_ { $1 } P"				"AAA"
+1.0	Sub		PermP1_2	Letter_Perm		Term			"P _ { $2 }"				"AAA"
+1.0	Sub		PermP2_1	PermP1_1		Term			"$1 _ { $2 }"				"AAA"
+1.0	pSub	PermP2_2	PermP1_2		Term			"_ { $2 } $1"				"AAA"
+
+1.0	pSub	CombH_P1_1	Letter_CombH	Term		"_ { $2 } H"					"AAA"
+1.0	pSubs	CombH_P1_1	Term			Letter_CombH	"_ { $1 } H"				"AAA"
+1.0	Sub		CombH_P1_2	Letter_CombH	Term		"H _ { $2 }"					"AAA"
+1.0	Sub		CombH_P2_1	CombH_P1_1		Term			"$1 _ { $2 }"				"AAA"
+1.0	pSub	CombH_P2_2	CombH_P1_2		Term			"_ { $2 } $1"				"AAA"
