@@ -7,17 +7,18 @@ The code for generating HMEs is run after the data decomposition step to get the
 
 ## Citation
 If you find the code useful in your research, please consider citing:
+
 @article{TRUONG202283,
-  title = {Syntactic data generation for handwritten mathematical expression recognition},
-  journal = {Pattern Recognition Letters},
-  volume = {153},
-  pages = {83-91},
-  year = {2022},
-  issn = {0167-8655},
-  doi = {https://doi.org/10.1016/j.patrec.2021.12.002},
-  url = {https://www.sciencedirect.com/science/article/pii/S0167865521004293},
-  author = {Thanh-Nghia Truong and Cuong Tuan Nguyen and Masaki Nakagawa},
-  keywords = {Syntactic data generation, Context free grammar, Parser, Mathematical expression, Handwriting recognition}
+	title = {Syntactic data generation for handwritten mathematical expression recognition},
+	journal = {Pattern Recognition Letters},
+	volume = {153},
+	pages = {83-91},
+	year = {2022},
+	issn = {0167-8655},
+	doi = {https://doi.org/10.1016/j.patrec.2021.12.002},
+	url = {https://www.sciencedirect.com/science/article/pii/S0167865521004293},
+	author = {Thanh-Nghia Truong and Cuong Tuan Nguyen and Masaki Nakagawa},
+	keywords = {Syntactic data generation, Context free grammar, Parser, Mathematical expression, Handwriting recognition}
 }
 
 
