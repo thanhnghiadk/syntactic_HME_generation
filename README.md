@@ -5,6 +5,7 @@ We publish the generation code as well as the mathematical grammar. The code for
 
 The code for generating HMEs is run after the data decomposition step to get the strucutures of all handwritten mathematical expression in the dataset. The file containing the strucutres of HMEs is also provied.
 
+## Citation
 If you find the code useful in your research, please consider citing:
 @article{TRUONG202283,
   title = {Syntactic data generation for handwritten mathematical expression recognition},
@@ -18,5 +19,6 @@ If you find the code useful in your research, please consider citing:
   author = {Thanh-Nghia Truong and Cuong Tuan Nguyen and Masaki Nakagawa},
   keywords = {Syntactic data generation, Context free grammar, Parser, Mathematical expression, Handwriting recognition}
 }
+
 
 We are updating the source code to make all the processes of data generation available.
